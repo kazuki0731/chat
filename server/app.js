@@ -4,7 +4,6 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const session = require("express-session");
-// const jwt = require("jsonwebtoken");
 
 const indexRouter = require("./routes/index");
 const loginRouter = require("./routes/login");
@@ -17,8 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../client/build")));
-
-// const SECRET_KEY = "abcdefg";
 
 app.use(
   session({
