@@ -6,6 +6,7 @@ const logger = require("morgan");
 const session = require("express-session");
 // const jwt = require("jsonwebtoken");
 
+const indexRouter = require("./routes/index");
 const loginRouter = require("./routes/login");
 const chatRouter = require("./routes/chat");
 
