@@ -29,7 +29,7 @@ const Regist = () => {
         setMessage("お名前かメールアドレスが重複してます");
         break;
       default:
-        setMessage("エラーが発生しました!!");
+        setMessage("エラーが発生しました");
         break;
     }
   };

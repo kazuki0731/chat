@@ -31,6 +31,7 @@ app.use(
   })
 );
 
+app.use("/", indexRouter);
 app.use("/login", loginRouter);
 app.use("/chat", chatRouter);
 
