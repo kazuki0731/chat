@@ -25,6 +25,19 @@ router.post("/", async (req, res) => {
       console.log(e.message);
       res.send("NG");
     });
+
+  // const result = await pool
+  //   .query("SELECT id, name FROM users WHERE email = $1 AND password = $2", [
+  //     req.body.email,
+  //     req.body.password,
+  //   ])
+  //   .catch((e) => {
+  //     res.send("NG");
+  //   });
+
+  // req.session.userName = result.rows[0].name;
+  // req.session.userId = result.rows[0].id;
+  // res.send(result.rows[0]);
 });
 
 router.put("/regist", (req, res) => {

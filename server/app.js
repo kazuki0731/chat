@@ -5,7 +5,6 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const session = require("express-session");
 
-const indexRouter = require("./routes/index");
 const loginRouter = require("./routes/login");
 const chatRouter = require("./routes/chat");
 
@@ -29,7 +28,6 @@ app.use(
   })
 );
 
-app.use("/", indexRouter);
 app.use("/login", loginRouter);
 app.use("/chat", chatRouter);
 
