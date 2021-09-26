@@ -1,16 +1,10 @@
-import { useEffect } from "react";
-import axios from "axios";
-
+import { BrowserRouter } from "react-router-dom";
+import Router from "./route/Router";
 function App() {
-  useEffect(() => {
-    axios.get("/api").then((res) => {
-      console.log(res.data);
-    });
-  }, []);
   return (
-    <div className="App">
-      <h1>Hello------</h1>
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
