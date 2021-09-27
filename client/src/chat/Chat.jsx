@@ -36,27 +36,11 @@ const Chat = () => {
     setLikeData(like.data);
 
     const text = await axios.get("/chat/text").catch((e) => console.log(e));
-    text.data.map(text => {
+    text.data.map((text) => {
       text.isLike = false;
       return text;
-    })
+    });
     setTextData(text.data);
-
-    // const likes = like.data.map((like) => {
-    //   const likeText = text.data.map((text) => {
-    //     if (text.id === like.text_id) {
-    //       text.isLike = true;
-    //     } else {
-    //       text.isLike = false;
-    //     }
-    //     return text;
-    //   });
-    //   return likeText;
-    // });
-
-    // likeText[0].isLiked = true;
-    // console.log(likes);
-    // text.data[0].isLike = true;
   };
 
   useEffect(() => {
