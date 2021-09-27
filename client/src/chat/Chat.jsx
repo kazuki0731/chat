@@ -94,7 +94,7 @@ const Chat = () => {
           likeId: data[0].id,
         })
         .then((res) => {
-          console.log(res.data);
+          // console.log(res.data);
           if (res.data !== "NG") {
             const newTextData = textData.map((data) => {
               if (data.id === id) {
