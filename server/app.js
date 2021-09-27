@@ -4,7 +4,6 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const session = require("express-session");
-
 const loginRouter = require("./routes/login");
 const chatRouter = require("./routes/chat");
 

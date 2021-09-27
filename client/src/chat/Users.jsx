@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import dayjs from "dayjs";
 import axios from "axios";
 
@@ -30,6 +30,7 @@ const Users = () => {
           </li>
         ))}
       </ul>
+      <Link to="/chat">戻る</Link>
     </div>
   );
 };

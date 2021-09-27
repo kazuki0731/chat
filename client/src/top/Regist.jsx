@@ -10,7 +10,7 @@ const Regist = () => {
   const submitRegist = async (data) => {
     if (data.name === "" || data.email === "") return;
 
-    const res = await axios.put("/login/regist", {
+    const res = await axios.post("/login/regist", {
       name: data.name,
       email: data.email,
       password: data.password,

@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
   // res.send(result.rows[0]);
 });
 
-router.put("/regist", (req, res) => {
+router.post("/regist", (req, res) => {
   pool
     .query("INSERT INTO users (name, email, password) VALUES ($1, $2, $3)", [
       req.body.name,
